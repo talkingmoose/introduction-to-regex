@@ -13,24 +13,24 @@ Resources for Penn State University MacAdmins 2020 Campfire session ["Introducti
 a b c  ... 	= 	lower case letters match themselves
 A B C ...	=	UPPER case letters match themselves
 1 2 3 ...	=	numbers match themselves
-.	=	any single character
-\ .	=	period
+.	        =	any single character
+\ .	        =	period
 [ a b c ]	=	match one of these characters
 [ ^ a b c ]	=	don't match any of these characters
 [ a - z ]	=	match any letter a through z
 [ A - Z ]	=	match any letter A through Z
 [ 0 - 9 ]	=	match any digit 0 through 9
-*	=	repeat the character 0 or more times
-+	=	repeat the character 1 or more times
-{n}	=	repeat the character n times
-{m,n}	=	repeat the character
-m through n times
-?	=	the character is optional
-\w	=	match any letter or number
-\d	=	match any digit
-\D	=	match any non-digit character
-( abc )	=	match the string in parentheses
-( a | b | c )	=	or
+*	        =	repeat the character 0 or more times
++	        =	repeat the character 1 or more times
+{n}	        =	repeat the character n times
+{m,n}	    =	repeat the character
+                m through n times
+?	        =	the character is optional
+\w	        =	match any letter or number
+\d	        =	match any digit
+\D	        =	match any non-digit character
+( abc )	    =	match the string in parentheses
+( a|b|c )	=	or
 ```
 
 #### BBEdit
@@ -38,7 +38,8 @@ m through n times
 
 Find double words in a text items and replace with single words.
 
-`(\b\w+\b)\W+\1`
+Find:    `(\b\w+\b)\W+\1`
+Replace: `\1`
 
 #### Regex for the 62 model identifiers that support macOS Catalina
 
@@ -107,6 +108,8 @@ Parses the uptime from five possible formats:
 
 `MartinsMacBookPro`
 
+Removes all but letters and numbers from a string.
+
 #### Another Rename Computer Script.bash
 [https://gist.github.com/talkingmoose/0fbc4213fe92d305f8d72b1a0dabda53](https://gist.github.com/talkingmoose/0fbc4213fe92d305f8d72b1a0dabda53)
 
@@ -153,6 +156,9 @@ Practice your regex and have fun at the same time. They have dozens of crossword
 Generates a regular expression (regex) that matches the provided version number or higher. Useful for Jamf Pro's "matches regex" operator in searches and smart groups where the results need to be the current version of an app or higher.
 
 ### Contact information
+
 @talkingmoose (the Slacks)
+
 @meck (the Twitters)
+
 bil{2}@talkingmo(2}se\.net (the inboxen) ;-)
