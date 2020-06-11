@@ -13,22 +13,22 @@ Resources for Penn State University MacAdmins 2020 Campfire session ["Introducti
 a b c  ...	=	lower case letters match themselves
 A B C ...	=	UPPER case letters match themselves
 1 2 3 ...	=	numbers match themselves
-.			=	any single character
-\ .			=	period
+.		=	any single character
+\ .		=	period
 [ a b c ]	=	match one of these characters
 [ ^ a b c ]	=	don't match any of these characters
 [ a - z ]	=	match any letter a through z
 [ A - Z ]	=	match any letter A through Z
 [ 0 - 9 ]	=	match any digit 0 through 9
-*			=	repeat the character 0 or more times
-+			=	repeat the character 1 or more times
-{n}			=	repeat the character n times
+*		=	repeat the character 0 or more times
++		=	repeat the character 1 or more times
+{n}		=	repeat the character n times
 {m,n}		=	repeat the character
-				m through n times
-?			=	the character is optional
-\w			=	match any letter or number
-\d			=	match any digit
-\D			=	match any non-digit character
+			m through n times
+?		=	the character is optional
+\w		=	match any letter or number
+\d		=	match any digit
+\D		=	match any non-digit character
 ( abc )		=	match the string in parentheses
 ( a|b|c )	=	or
 ```
@@ -123,7 +123,7 @@ Jamf, Catalina and osascript compatible. Prompts to choose a site and enter an a
 ### Useful websites
 
 #### Semantic Versioning
-[https://semver.org/}(https://semver.org/)
+[https://semver.org/](https://semver.org/)
 
 Given a version number MAJOR.MINOR.PATCH, increment the:
 
