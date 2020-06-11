@@ -10,26 +10,26 @@ Resources for Penn State University MacAdmins 2020 Campfire session ["Introducti
 #### Regex cheatsheet
 
 ```
-a b c  ... 	= 	lower case letters match themselves
+a b c  ...	=	lower case letters match themselves
 A B C ...	=	UPPER case letters match themselves
 1 2 3 ...	=	numbers match themselves
-.	        =	any single character
-\ .	        =	period
+.			=	any single character
+\ .			=	period
 [ a b c ]	=	match one of these characters
 [ ^ a b c ]	=	don't match any of these characters
 [ a - z ]	=	match any letter a through z
 [ A - Z ]	=	match any letter A through Z
 [ 0 - 9 ]	=	match any digit 0 through 9
-*	        =	repeat the character 0 or more times
-+	        =	repeat the character 1 or more times
-{n}	        =	repeat the character n times
-{m,n}	    =	repeat the character
-                m through n times
-?	        =	the character is optional
-\w	        =	match any letter or number
-\d	        =	match any digit
-\D	        =	match any non-digit character
-( abc )	    =	match the string in parentheses
+*			=	repeat the character 0 or more times
++			=	repeat the character 1 or more times
+{n}			=	repeat the character n times
+{m,n}		=	repeat the character
+				m through n times
+?			=	the character is optional
+\w			=	match any letter or number
+\d			=	match any digit
+\D			=	match any non-digit character
+( abc )		=	match the string in parentheses
 ( a|b|c )	=	or
 ```
 
@@ -39,6 +39,7 @@ A B C ...	=	UPPER case letters match themselves
 Find double words in a text items and replace with single words.
 
 Find:    `(\b\w+\b)\W+\1`
+
 Replace: `\1`
 
 #### Regex for the 62 model identifiers that support macOS Catalina
@@ -115,11 +116,9 @@ Removes all but letters and numbers from a string.
 
 Jamf, Catalina and osascript compatible. Prompts to choose a site and enter an asset tag before renaming the Mac and then updating Jamf Pro.
 
-*Smart Computer Group 1*
-`(AVL|BFS|BLR|CHI|GZH|MLB|SBA|SYD)-MAC-\w*[A-Z]\w*`
+*Smart Computer Group 1:*	`(AVL|BFS|BLR|CHI|GZH|MLB|SBA|SYD)-MAC-\w*[A-Z]\w*`
 
-*Smart Computer Group 2*
-`(AVL|BFS|BLR|CHI|GZH|MLB|SBA|SYD)-MAC-\d{5}`
+*Smart Computer Group 2:*	`(AVL|BFS|BLR|CHI|GZH|MLB|SBA|SYD)-MAC-\d{5}`
 
 ### Useful websites
 
@@ -161,4 +160,4 @@ Generates a regular expression (regex) that matches the provided version number 
 
 @meck (the Twitters)
 
-bil{2}@talkingmo(2}se\.net (the inboxen) ;-)
+bil{2}@talkingmo(2}se\\.net (the inboxen) ;-)
