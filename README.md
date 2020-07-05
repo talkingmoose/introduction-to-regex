@@ -171,4 +171,4 @@ Generates a regular expression (regex) that matches the provided version number 
 
 @meck (the Twitters)
 
-bil{2}@talkingmo(2}se\\.net (the inboxen) ;-)
+bil{2}@talkingmo{2}se\\.net (the inboxen) ;-)
